@@ -1,5 +1,6 @@
 # InstructGPT-reproduce
 reproduce the InstructGPT from the paper 《Training language models to follow instructions with human feedback》
+![image](https://github.com/user-attachments/assets/e6d307e8-365f-4fbf-9a14-234ab4e4021a)
 
 
 ## 1. InstructGPT概述
@@ -71,5 +72,22 @@ KL散度约束确保稳定性
 
 ## Results
 
+
+
+
+
+## References
+```bibtex
+@misc{ouyang2022traininglanguagemodelsfollow,
+      title={Training language models to follow instructions with human feedback}, 
+      author={Long Ouyang and Jeff Wu and Xu Jiang and Diogo Almeida and Carroll L. Wainwright and Pamela Mishkin and Chong Zhang and Sandhini Agarwal and Katarina Slama and Alex Ray and John Schulman and Jacob Hilton and Fraser Kelton and Luke Miller and Maddie Simens and Amanda Askell and Peter Welinder and Paul Christiano and Jan Leike and Ryan Lowe},
+      year={2022},
+      eprint={2203.02155},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2203.02155}, 
+}
+
+```
 
 
