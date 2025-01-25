@@ -7,7 +7,6 @@ reproduce the InstructGPT from the paper 《Training language models to follow i
 - InstructGPT是OpenAI在2022年提出的一个重要模型1，它的主要目标是让语言模型更好地遵循人类指令。这个模型是在GPT-3的基础上，通过人类反馈强化学习（RLHF）进行优化的。
 
 ## 2. 技术原理
-- InstructGPT的训练过程包含三个关键步骤：
 
 ### 2.1 监督微调（Supervised Fine-Tuning, SFT）
 - 收集人类编写的示范数据（prompt-completion pairs）
@@ -45,6 +44,8 @@ reproduce the InstructGPT from the paper 《Training language models to follow i
   - 使用paired comparison训练
   - 输出标量奖励分数
 
+![loss](image/loss.png)
+
 #### PPO训练：
 实现了PPO的关键组件
 包含重要的截断比率（clip ratio）
@@ -54,8 +55,18 @@ KL散度约束确保稳定性
 
 
 
+## Original Project
+- This project combined the content of this repo: [RLHF_instructGPT](https://github.com/LanXiu0523/RLHF_instructGPT.git)
 
-## How to run?
+
+
+## Run
+- 单机单卡
+
+
+- 单机多卡
+
+- 多机多卡
 
 
 
@@ -86,6 +97,20 @@ KL散度约束确保稳定性
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2203.02155}, 
+}
+
+```
+
+
+```bibtex
+@misc{lan2023rlhf,  
+    author = {Lan Xiu},  
+    title = {RLHF\_instructGPT: Reproduce instructGPT},  
+    year = {2023},  
+    publisher = {GitHub},  
+    journal = {GitHub repository},  
+    howpublished = {\url{https://github.com/LanXiu0523/RLHF_instructGPT}},  
+    commit = {0e4705660bc5e7fe60a4aacacc687ed928476b1b} 
 }
 
 ```
