@@ -59,6 +59,40 @@ KL散度约束确保稳定性
 - This project combined the content of this repo: [RLHF_instructGPT](https://github.com/LanXiu0523/RLHF_instructGPT.git)
 
 
+## Project Structure
+
+
+### `src`: **multi-GPU** implementation using deepspeed
+### `src-gpt2`: **single-GPU** implementation using GPT2 in `transformers`
+
+
+### `src` structure
+
+
+### `src_gpt2` structure
+```Plain Text
+src_gpt2/  
+├── config/  
+│   └── config.yaml  
+├── data/  
+│   ├── sft_data.json  
+│   ├── rm_data.json  
+│   └── pretrain_data.json  
+├── models/  
+│   ├── sft_model.py  
+│   ├── reward_model.py  
+│   └── ppo_model.py  
+├── trainers/  
+│   ├── sft_trainer.py  
+│   ├── reward_trainer.py  
+│   └── ppo_trainer.py  
+├── utils/  
+│   ├── data_utils.py  
+│   └── training_utils.py  
+├── main.py  
+└── requirements.txt
+```
+
 
 ## Run
 - 单机单卡

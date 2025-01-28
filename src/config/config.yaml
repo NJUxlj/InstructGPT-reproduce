@@ -1,0 +1,25 @@
+model:  
+  base_model: "gpt2"  
+  max_length: 512  
+
+sft:  
+  learning_rate: 2e-5  
+  batch_size: 8  
+  num_epochs: 3  
+  warmup_steps: 100  
+
+reward_model:  
+  learning_rate: 1e-5  
+  batch_size: 4  
+  num_epochs: 3  
+  hidden_size: 768  
+
+ppo:  
+  learning_rate: 1e-5  
+  batch_size: 8  
+  num_epochs: 3  
+  beta: 0.2  
+  gamma: 0.1  
+  clip_epsilon: 0.2  
+  target_kl: 0.01  
+  max_grad_norm: 1.0  
