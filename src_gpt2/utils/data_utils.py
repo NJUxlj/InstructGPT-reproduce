@@ -81,3 +81,12 @@ class RewardModelDataset(Dataset):
             "worse_input_ids": worse_encodings["input_ids"].squeeze(),  
             "worse_attention_mask": worse_encodings["attention_mask"].squeeze(),  
         }
+        
+        
+        
+        
+
+
+
+
+
