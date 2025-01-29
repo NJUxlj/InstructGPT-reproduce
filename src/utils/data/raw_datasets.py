@@ -23,4 +23,8 @@ class PromptRawDataset(object):
         pass
     
     
+    def get_chosen(self):
+        pass
+    
+    
     
